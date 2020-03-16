@@ -12,7 +12,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-    
-        // $this->call(UsersTableSeeder::class);
+
+        $this->call([
+            contactus::class,
+            defaultsetting::class,
+            featuremodel::class,
+            Joblist::class,
+        ]);
     }
 }

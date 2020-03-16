@@ -15,7 +15,7 @@ class defaultsetting extends Seeder
         DB::table('sys_settings')->insert([
             'webname'=>'TissEngine  V2.0',
             'description'=>'Powered By AfrangArt Desing Studio',
-            'keywrods'=>'Vue Cli - Laravel Framework - Php 7.3',
+            'keywords'=>'Vue Cli - Laravel Framework - Php 7.3',
             'wellcometext'=>'Well Come to TissEngine',
     ]);
     }

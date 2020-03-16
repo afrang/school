@@ -1,12 +1,458 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe175e46-b525-4f6b-a0c4-eb5a761b824a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Setting/SpecialPageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/View/Blog/BlogGroupController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/View/Blog/BlogViewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/View/Tools/ContactViewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/Model/Pages/page_setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/database/migrations/2020_03_11_055432_page_settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/filemanager/Blog/11/1584252993.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/filemanager/Blog/3/1584179797.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/filemanager/Blog/4/1584179905.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/filemanager/firstpage/1/1584306898.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/11/mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/11/orginal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/11/thump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/3/mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/3/orginal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/3/thump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/4/mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/4/orginal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/4/thump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/5/mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/5/orginal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/5/thump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/6/mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/6/orginal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/6/thump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/7/mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/7/orginal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/Articles/7/thump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/firspage/1/medium/img1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/firspage/1/orginal/img1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/media/firspage/1/thump/img1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/view/Tools/foot.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/view/pages/blog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/view/pages/contactus.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/view/pages/group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/view/pages/otherarticle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/school.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/school.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.rnd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.rnd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Blog/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Blog/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Blog/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Blog/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Setting/ContactusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Setting/ContactusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Setting/settingcontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/User/Setting/settingcontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Model/Blog/b_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Model/Blog/b_group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2020_02_24_085041_p_color.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2020_02_24_085041_p_colors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2020_02_24_104551_p_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2020_02_24_104551_p_groups.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/seeds/defaultsetting.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeds/defaultsetting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/Articles/1/mini.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/Articles/1/mini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/Articles/1/orginal.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/Articles/1/orginal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/Articles/1/thump.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/Articles/1/thump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/Articles/2/mini.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/Articles/2/mini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/Articles/2/orginal.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/Articles/2/orginal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/Articles/2/thump.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/Articles/2/thump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/BlogGroup/2/mini.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/BlogGroup/2/mini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/BlogGroup/2/orginal.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/BlogGroup/2/orginal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/BlogGroup/2/thump.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/BlogGroup/2/thump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/gallerygroup/1/medium/thump.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/gallerygroup/1/medium/thump.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/gallerygroup/1/orginal/thump.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/gallerygroup/1/orginal/thump.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/gallerygroup/1/thump/thump.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/gallerygroup/1/thump/thump.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/gallerygroup/2/medium/thump.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/gallerygroup/2/medium/thump.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/gallerygroup/2/orginal/thump.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/gallerygroup/2/orginal/thump.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/gallerygroup/2/thump/thump.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/gallerygroup/2/thump/thump.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/setting/1/medium/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/setting/1/medium/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/setting/1/orginal/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/setting/1/orginal/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/media/setting/1/thump/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/media/setting/1/thump/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Users/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Users/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Users/blog/articlegroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Users/blog/articlegroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Users/blog/articlelist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Users/blog/articlelist.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Users/setting/firstpage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Users/setting/firstpage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lang/fa/website.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lang/fa/website.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/view/Tools/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/view/Tools/header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/view/Tools/slider1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/view/Tools/slider1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/view/pages/firstpage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/view/pages/firstpage.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="school: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/backend/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/backend/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/backend/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/backend/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/event" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/backend/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/backend/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/backend/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/backend/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/backend/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/backend/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/backend/vendor/moontoast/math" />
+      <path value="$PROJECT_DIR$/backend/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/backend/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/backend/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/backend/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/backend/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/backend/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/backend/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/backend/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/backend/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/backend/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/backend/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpseclib/bcmath_compat" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/backend/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/backend/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/backend/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/backend/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/backend/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/backend/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/backend/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/backend/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/backend/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/backend/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/backend/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/backend/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/backend/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/backend/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/backend/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/backend/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/backend/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/backend/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/backend/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/backend/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/backend/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/backend/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/backend/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/backend/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/backend/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/backend/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/backend/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/backend/vendor/composer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1Z2BSoBj9oCXRcjuAeGHtheRVj1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/view/pages" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\website\tissengine\school\front\src\view\pages" />
+      <recent name="D:\website\tissengine\school\backend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2">
+        <option name="NpmBeforeRunTask" enabled="true">
+          <package-json value="$PROJECT_DIR$/front/package.json" />
+          <command value="run" />
+          <scripts>
+            <script value="serve" />
+          </scripts>
+          <node-interpreter value="project" />
+          <envs />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2">
+        <option name="NpmBeforeRunTask" enabled="true">
+          <package-json value="$PROJECT_DIR$/front/package.json" />
+          <command value="run" />
+          <scripts>
+            <script value="serve" />
+          </scripts>
+          <node-interpreter value="project" />
+          <envs />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe175e46-b525-4f6b-a0c4-eb5a761b824a" name="Default Changelist" comment="" />
+      <created>1584027310067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584027310067</updated>
+      <workItem from="1584027311737" duration="245000" />
+      <workItem from="1584042521908" duration="3238000" />
+      <workItem from="1584084649959" duration="7636000" />
+      <workItem from="1584107823801" duration="6488000" />
+      <workItem from="1584114667747" duration="6601000" />
+      <workItem from="1584174149211" duration="15445000" />
+      <workItem from="1584205479781" duration="7038000" />
+      <workItem from="1584252423148" duration="8016000" />
+      <workItem from="1584304042204" duration="5156000" />
+      <workItem from="1584341993129" duration="7745000" />
+      <workItem from="1584361398669" duration="3568000" />
+      <workItem from="1584387084591" duration="3918000" />
+    </task>
+    <task id="LOCAL-00001" summary="First">
+      <created>1584027445416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584027445416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First" />
+    <option name="LAST_COMMIT_MESSAGE" value="First" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="476" y="4" key="#PHP" timestamp="1584044261197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="476" y="4" key="#PHP/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584044261197" />
+    <state x="350" y="69" key="#Test_Frameworks" timestamp="1584044250134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="350" y="69" key="#Test_Frameworks/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584044250134" />
+    <state x="225" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584389172513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="225" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584389172513" />
+    <state x="339" y="11" key="CommitChangelistDialog2" timestamp="1584027430000">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="339" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584027430000" />
+    <state x="550" y="169" key="FileChooserDialogImpl" timestamp="1584044233008">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="169" key="FileChooserDialogImpl/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584044233008" />
+    <state width="200" height="457" key="HiddenNamespacesPopup" timestamp="1584389182547">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="200" height="457" key="HiddenNamespacesPopup/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584389182547" />
+    <state x="362" y="147" key="Vcs.Push.Dialog.v2" timestamp="1584027538138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584027538138" />
+    <state x="467" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1584387120263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584304054996" />
+    <state x="467" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824/3840.0.1920.999@0.0.1536.824" timestamp="1584342002217" />
+    <state x="467" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584387120263" />
+    <state x="408" y="29" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584307553399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="408" y="29" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584307553399" />
+    <state x="462" y="144" width="613" height="536" key="find.popup" timestamp="1584113828206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="462" y="144" width="613" height="536" key="find.popup/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584113828206" />
+    <state x="426" y="188" key="run.anything.popup" timestamp="1584215082405">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584215082405" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584389447047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1280.453.1280.984@0.0.1536.824" timestamp="1584200276708" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.609.1366.728@0.0.1536.824" timestamp="1584389447047" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584216779981" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/view/Tools/header.vue</url>
+          <line>158</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/view/pages/firstpage.vue</url>
+          <line>227</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/view/pages/firstpage.vue</url>
+          <line>320</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

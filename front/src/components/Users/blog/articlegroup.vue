@@ -44,6 +44,11 @@
                             <input  @keyup="urlcreate" class="form-control col-xs-12 col-sm-12 " v-model="blog.name">
                             <label v-text="$t('url')"></label>
                             <input  class="form-control col-xs-12 col-sm-12 " v-model="blog.url">
+                            <label v-text="$t('showinblog')"></label>
+                            <select class="form-control" v-model="blog.publish">
+                                <option value="1" v-text="$t('yes')"></option>
+                                <option value="0" v-text="$t('no')"></option>
+                            </select>
 
                         </div>
                         <div class="col-sm-6 col-xs-12">

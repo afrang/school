@@ -16,7 +16,13 @@ Auth::routes();
 Route::prefix('')->namespace('View')->group(function (){
         Route::resource('/slider','Tools\GalleryViewController');
         Route::resource('/setting','Tools\SettingpageController');
+        Route::resource('/firstpage','Pages\FirstpageController');
+        /* Blog Group */
+        Route::resource('/bloggroup','Blog\BlogGroupController');
+        Route::resource('/blog','Blog\BlogViewController');
+        Route::resource('/contactusapi','Tools\ContactViewController');
 
+    // Route::resource('/blog')
         /* Group */
         Route::resource('/pgroup','Product\ProductGroupControllerViewController');
 });

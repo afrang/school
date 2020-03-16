@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PColor extends Migration
+class PColors extends Migration
 {
     /**
      * Run the migrations.
@@ -29,6 +29,6 @@ class PColor extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('p_color');
+        Schema::dropIfExists('p_colors');
     }
 }

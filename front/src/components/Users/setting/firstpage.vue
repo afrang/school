@@ -8,21 +8,36 @@
                     <label  @click="loadadata()"  v-text="$t('FirstSlider')"></label>
                     <v-select  @input="pluskeycomponent()" dir="rtl" v-model="mydata.sliders.data"  :options="sliders" label="name" ></v-select>
                     <template v-if="mydata.sliders.data!=null">
-                        <slider1 :key="kecomponent" :name="mydata.sliders.data.urlname"></slider1>
+                        <slider1 :height="200" :key="kecomponent" :name="mydata.sliders.data.urlname"></slider1>
 
                     </template>
                 </div>
-                <div class="col-sm-6">
-                    <label v-text="$t('OffSectionSlider')"></label>
+                <h4 >سخن روز</h4>
+                <hr>
+                <div class="col-sm-12">
+                    <tisseditor
+
+                            :height="200"
+                            :text="mydata.about.data"
+                            v-on:myevent="doSomething"
+                            :mode="this.modelpage"></tisseditor>
+                </div>
+
+                <input type="text" v-model="mydata.urlbox1.data" class="form-control" placeholder="منبع / نویسنده ">
+
+                <div class="col-sm-12">
+                    <label v-text="$t('Gallery')"></label>
                     <v-select  @input="pluskeycomponent()"  dir="rtl" v-model="mydata.offsliders.data"  :options="sliders" label="name" ></v-select>
                     <template v-if="mydata.offsliders.data!=null">
                         <slider1   height="200px"  :key="kecomponent" :name="mydata.offsliders.data.urlname"></slider1>
 
                     </template>
                 </div>
-                <div class="col-sm-6 row">
-                    <div class="col-sm-6">
-                        <label v-text="$t('Off')"></label>
+                <div class="col-sm-12 row">
+                    <div class="col-sm-12">
+                        <label v-text="$t('BAckimage')"></label>
+                        <input type="text" v-model="mydata.urlbox2.data" class="form-control" placeholder="تیتر">
+
                         <file-uploader
                                 mode="firspage"
                                 v-on:filename="img1"
@@ -30,7 +45,6 @@
                                 name="img1"
                                 :file="mydata.img1.data"
                         ></file-uploader>
-                        <input type="text" v-model="mydata.urlbox1.data" class="form-control" placeholder="url">
                     </div>
                     <div class="col-sm-6">
                         <label  v-text="$t('Off')"></label>
@@ -41,165 +55,26 @@
                                 name="img2"
                                 :file="mydata.img2.data"
                         ></file-uploader>
-                        <input type="text" v-model="mydata.urlbox2.data" class="form-control" placeholder="url">
                     </div>
-                </div>
-                <div class="col-sm-12">
-                    <h4 v-text="$t('SpecailProdcut')"></h4>
-                    <hr>
                 </div>
 
-                <div class="col-sm-6 row">
-                    <div class="col-sm-6">
-                        <label  v-text="$t('Product1')"></label>
-                        <v-select dir="rtl" v-model="mydata.pr1.data"  :options="products"  label="model">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}     {{ option.model }}</div>
-                                <small>{{ option.to_group.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label  v-text="$t('Product2')"></label>
-                        <v-select dir="rtl" v-model="mydata.pr2.data"  :options="products"  label="model">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}     {{ option.model }}</div>
-                                <small>{{ option.to_group.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label  v-text="$t('Product3')"></label>
-                        <v-select dir="rtl" v-model="mydata.pr3.data"  :options="products"  label="model">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}     {{ option.model }}</div>
-                                <small>{{ option.to_group.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label  v-text="$t('Product4')"></label>
-                        <v-select dir="rtl" v-model="mydata.pr4.data"  :options="products"  label="model">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}     {{ option.model }}</div>
-                                <small>{{ option.to_group.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <label @click="loadadata" v-text="$t('SpecailProduct')"></label>
-                    <file-uploader
-                            :mode="this.modelpage"
-                            v-on:filename="special"
-                            :id='1'
-                            name="special"
-                            :file="mydata.special.data"
-                    ></file-uploader>
-
-
-                </div>
                 <input type="submit" class="btn mt-4  mb-4 btn-primary" :value="$t('save')">
 
 
-                <div class="col-sm-12">
 
-                    <h4 v-text="$t('Blog')"></h4>
-                    <hr>
-                </div>
-                <div class="col-sm-6 row">
-                    <div class="col-sm-6">
-                        <file-uploader
-                                :mode="this.modelpage"
-                                v-on:filename="b2img"
-                                :id='1'
-                                name="b2img"
-                                :file="mydata.b2img.data"
-                        ></file-uploader>
-                        <v-select dir="rtl" v-model="mydata.b2.data"  :options="artilces"  label="name">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}  </div>
-                                <small style="color:blue;">{{ option.to_article.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                    <div class="col-sm-6">
-                        <file-uploader
-                                :mode="this.modelpage"
-                                v-on:filename="b3img"
-                                :id='1'
-                                name="b3img"
-                                :file="mydata.b3img.data"
-                        ></file-uploader>
-                        <v-select dir="rtl" v-model="mydata.b3.data"  :options="artilces"  label="name">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}  </div>
-                                <small style="color:blue;">{{ option.to_article.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                    <div class="col-sm-12">
-                        <file-uploader
-                                :mode="this.modelpage"
-                                v-on:filename="b4img"
-                                :id='1'
-                                name="b4img"
-                                :file="mydata.b4img.data"
-                        ></file-uploader>
-                        <v-select dir="rtl" v-model="mydata.b4.data"  :options="artilces"  label="name">
-                            <template      v-slot:option="option">
-                                <div>{{ option.name }}  </div>
-                                <small style="color:blue;">{{ option.to_article.name }}</small>
-                            </template>
-                        </v-select>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <file-uploader
-                            :mode="this.modelpage"
-                            v-on:filename="b1img"
-                            :id='1'
-                            name="b1img"
-                            :file="mydata.b1img.data"
-                    ></file-uploader>
-                    <v-select dir="rtl" v-model="mydata.b1.data"  :options="artilces"  label="name">
-                        <template      v-slot:option="option">
-                            <div>{{ option.name }}  </div>
-                            <small style="color:blue;">{{ option.to_article.name }}</small>
-                        </template>
-                    </v-select>
-                </div>
                 <div class="col-sm-12 row mt-3">
 
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <h4 v-text="$t('AboutUs')"></h4>
                         <hr>
                         <tisseditor
+                                :keys="2"
                                 :height="500"
-                                :text="mydata.about.data"
-                                v-on:myevent="doSomething"
+                                :text="mydata.footer.data"
+                                v-on:myevent="footerthing"
                                 :mode="this.modelpage"></tisseditor>
                     </div>
-                    <div class="col-sm-6">
-                        <h4 v-text="$t('AboutIMG')"></h4>
-                        <hr>
-                        <file-uploader
-                                :mode="this.modelpage"
-                                v-on:filename="aboutimg"
-                                :id='1'
-                                name="aboutimg"
-                                :file="mydata.aboutimg.data"
-                        ></file-uploader>
-                    </div>
-                    <div class="col-sm-12">
-                        <file-uploader
-                                :mode="this.modelpage"
-                                v-on:filename="footerimg"
-                                :id='1'
-                                name="footerimg"
-                                :file="mydata.footerimg.data"
-                        ></file-uploader>
-                    </div>
+
                 </div>
                 <input type="submit" class="btn mt-4 btn-primary" :value="$t('save')">
             </form>
@@ -320,6 +195,10 @@
                         data:null,
                         mode:'longtext'
                     },
+                    footer:{
+                        data:null,
+                        mode:'longtext'
+                    },
                     footerimg:{
                         data:null,
                         mode:'img'
@@ -384,6 +263,9 @@
             },
             doSomething(e){
                 this.mydata.about.data=e;
+            },
+            footerthing(e){
+                this.mydata.footer.data=e;
             },
             img1(e){
 
@@ -475,6 +357,7 @@
             this.loadadata();
         }
     }
+
 </script>
 
 <style scoped>

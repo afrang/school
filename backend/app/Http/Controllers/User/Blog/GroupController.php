@@ -59,7 +59,7 @@ class GroupController extends Controller
             ]);
             $save= new $b_group;
             $save->name= $request->name;
-            $save->publish= 1;
+            $save->publish= $request->publish;
             $save->text= $request->text;
             $save->url= $request->url;
             $save->keywords= $request->keywords;
@@ -154,7 +154,9 @@ class GroupController extends Controller
             $save->name= $request->name;
             $save->publish= 1;
             $save->text= $request->text;
-            $save->url= $request->url;
+        $save->publish= $request->publish;
+
+        $save->url= $request->url;
             $save->keywords= $request->keywords;
             $save->description= $request->description;
               $save->save();

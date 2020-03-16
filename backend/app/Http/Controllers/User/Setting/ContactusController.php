@@ -98,6 +98,7 @@ class ContactusController extends Controller
         $save->viber                =$request->viber;
         $save->sinaweibo            =$request->sinaweibo;
         $save->line                 =$request->line;
+        $save->address                 =$request->address;
         $save->reddit               =$request->reddit;
         $save->tiktok               =$request->tiktok;
         $save->save();

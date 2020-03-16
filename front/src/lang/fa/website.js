@@ -220,4 +220,10 @@ module.exports = {
     Blog: 'بلاگ  ',
     AboutUs: 'درباره ما  ',
     AboutIMG: 'عکس درباره ما  ',
+    schools: 'مدارس  ',
+    blog: 'بلاگ  ',
+    aboutboss: 'درباره مدیریت  ',
+    aboutschool: 'درباره مدرسه  ',
+    aboottall:'گروه آموزشی تال  ',
+    showinblog:'نمایش در بلاگ  ',
 }

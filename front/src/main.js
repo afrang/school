@@ -10,24 +10,40 @@ import Swal from 'sweetalert2'
 import Dashboard from './components/Users/Dashboard'
 import logout from './components/Auth/Logout'
 import firstpage from "./view/pages/firstpage";
+import group from "./view/pages/group";
+import blog from "./view/pages/blog";
+import contactus from "./view/pages/contactus";
 /* BLog Group */
 
 import VueSidebarMenu from 'vue-sidebar-menu'
 
 
 Vue.config.productionTip = false;
+import VueHead from 'vue-head'
+Vue.use(VueHead)
+
 import VueI18n from 'vue-i18n';
 Vue.use(VueI18n);
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter);
 Vue.use(Showerror);
 Vue.use(VueSidebarMenu);
+Vue.component('date-picker', VuePersianDatetimePicker);
+import dayjs from 'dayjs';
+
+import jalaliday from 'jalaliday';
+dayjs.extend(jalaliday);
+dayjs.calendar('jalali');
+
 import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 import 'vue-select/dist/vue-select.css';
+
+
 require('bootstrap');
 import vSelect from 'vue-select'
 
 Vue.component('v-select', vSelect);
+import VuePersianDatetimePicker from 'vue-persian-datetime-picker';
 
 
 import 'vue-phone-number-input/dist/vue-phone-number-input.css';
@@ -39,7 +55,10 @@ import en from './lang/en/website'
  Vue.prototype.$storage ='http://127.0.0.1:8000/';
  Vue.prototype.$axios =axios;
  Vue.prototype.$swal =Swal;
-
+Vue.prototype.$today=dayjs()
+    .calendar('jalali')
+    .locale('fa')
+    .format('DD MMMM YYYY');
 import 'froala-editor/js/plugins.pkgd.min.js';
 //Import third party plugins
 import 'froala-editor/js/third_party/embedly.min';
@@ -93,6 +112,22 @@ const router=new  VueRouter({
             name:'firstpage',
             component:firstpage
         },
+        {
+            path:'/group/:url',
+            name:'group',
+            component:group
+        },
+        {
+            path:'/blog/:url',
+            name:'blog',
+            component:blog
+        },
+        {
+            path:'/contactus',
+            name:'contactus',
+            component:contactus
+        },
+
     ]
 })
 
@@ -100,4 +135,5 @@ new Vue({
     i18n,
     router,
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');
+

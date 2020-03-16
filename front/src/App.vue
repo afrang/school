@@ -19,7 +19,7 @@ export default {
 @import '~samim-font/dist/font-face.css';
 @import "~animate.css";
 html *{font-family: Samim;}
-
+html{ overflow-x: hidden;}
 ::-webkit-scrollbar{width:9px}::-webkit-scrollbar-track{background:#cccccc;border-radius:2px}::-webkit-scrollbar-thumb{background:#000000;border-radius:-2px}
 
 /* sign in FORM */

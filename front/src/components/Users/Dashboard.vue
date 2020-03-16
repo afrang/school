@@ -148,7 +148,7 @@
                             },
                         ]
                     },
-                    {
+                   /* {
 
                         title: this.$t('other'),
                         icon: 'icofont-star',
@@ -186,8 +186,8 @@
                                 title: this.$t('listallbanner')
                             },
                         ]
-                    },
-                    {
+                    },*/
+                   /* {
                         href: '',
                         title: this.$t('bannertools'),
                         icon: 'icofont-cubes',
@@ -204,7 +204,7 @@
                             },
 
                         ]
-                    },
+                    },*/
                     {
                         href: '',
                         title: this.$t('users'),
@@ -222,7 +222,7 @@
                             },
                         ]
                     },
-                    {
+                  /*  {
                         href: '',
                         title: this.$t('featureandAttributes'),
                         icon: 'icofont-toggle-on',
@@ -243,8 +243,8 @@
                                 title: this.$t('colormanager')
                             },
                         ]
-                    },
-                    {
+                    },*/
+                   /* {
                         href: '',
                         title: this.$t('product'),
                         icon: 'icofont-box',
@@ -261,8 +261,8 @@
                             },
 
                         ]
-                    },
-                    {
+                    },*/
+                    /*{
                         href: '',
                         title: this.$t('invoice'),
                         icon: 'icofont-list',
@@ -288,7 +288,7 @@
                                 title: this.$t('findinvoice')
                             },
                         ]
-                    },
+                    },*/
                 ],
                 dynamicComponent:'dashborad'
 
@@ -324,6 +324,9 @@
             }
         },
         mounted() {
+            if(!localStorage.token){
+                this.$router.push({name: 'firstpage'});
+            }
             this.profileshow();
        this.dynamicComponent = window.location.hash.substring(1).split('#')[0];
 
