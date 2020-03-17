@@ -1,23 +1,23 @@
 <template>
     <div>
-        <div class="bg-blueheader">
-         <div class="row" dir="rtl">
-             <div class="col-sm-4 col-xs-12" >
-                 <h4  class="mytext" v-text="setting.wellcometext"></h4>
-             </div>
-             <div class="col-sm-4 myfitepageicon">
-                 <span class=" icofont-video"></span>
-                 <span class="  icofont-instagram"></span>
-                 <span class="  icofont-telegram"></span>
-             </div>
-             <div class="col-sm-4">
-                 <div class="vl"></div>
-                 <div class="row">
-                     <div class="col-sm-6 dateshow">     {{ $today }}</div>
-                     <div class="col-sm-6"></div>
-                 </div>
-             </div>
-         </div>
+        <div class="bg-blueheader" v-if="setting!=null">
+            <div class="row" dir="rtl">
+                <div class="col-sm-4 col-xs-12" >
+                    <h4  class="mytext" v-text="setting.wellcometext"></h4>
+                </div>
+                <div class="col-sm-4 myfitepageicon">
+                    <span class=" icofont-video"></span>
+                    <span class="  icofont-instagram"></span>
+                    <span class="  icofont-telegram"></span>
+                </div>
+                <div class="col-sm-4">
+                    <div class="vl"></div>
+                    <div class="row">
+                        <div class="col-sm-6 dateshow">     {{ $today }}</div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row" dir="rtl">
             <div class="col-sm-6 col-xs-12 row">
@@ -30,26 +30,26 @@
             </div>
             <div class="col-sm-6 col-xs-12">
                 <ul class="nav  text-right mt-3"  >
-                <template v-for="(item,index) in menu" >
-                    <li class="nav-item"  v-if="item.children==null" :key="index">
+                    <template v-for="(item,index) in menu" >
+                        <li class="nav-item"  v-if="item.children==null" :key="index">
 
-                        <a class="nav-link text-black " :href="item.link" >
-                            <span :class="item.icon"></span> | {{ item.name }}
-                        </a>
-                    </li>
+                            <a class="nav-link text-black " :href="item.link" >
+                                <span :class="item.icon"></span> | {{ item.name }}
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown" v-if="item.children!=null"  :key="index">
+                        <li class="nav-item dropdown" v-if="item.children!=null"  :key="index">
 
-                        <a class="nav-link dropdown-toggle tiss-cursur" data-toggle="dropdown"   role="button" aria-haspopup="true" aria-expanded="false">
-                            <span :class="item.icon"></span> | {{  item.name }}
-                        </a>
-                        <div class="dropdown-menu text-right">
-                            <template v-for="(menu,inx) in item.children" >
-                                <a :key="inx" class="dropdown-item text-black" :href="menu.link" >{{ menu.name }}</a>
-                            </template>
-                        </div>
-                    </li>
-                </template>
+                            <a class="nav-link dropdown-toggle tiss-cursur" data-toggle="dropdown"   role="button" aria-haspopup="true" aria-expanded="false">
+                                <span :class="item.icon"></span> | {{  item.name }}
+                            </a>
+                            <div class="dropdown-menu text-right">
+                                <template v-for="(menu,inx) in item.children" >
+                                    <a :key="inx" class="dropdown-item text-black" :href="menu.link" >{{ menu.name }}</a>
+                                </template>
+                            </div>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
@@ -65,7 +65,7 @@
 
                 countbasket:5,
                 productgroup:{},
-                setting:{},
+                setting:null,
                 show:false,
                 menu:{
                     0:{
@@ -120,9 +120,9 @@
             }
         },
         components: {
-/*
-            'popper': Popper
-*/
+            /*
+                        'popper': Popper
+            */
         },
         methods:{
             loadsetting(){
@@ -153,12 +153,12 @@
 </script>
 
 <style scoped>
-   .bg-blueheader{
-       min-height: 20px;
-       width: 100%;
-       background-color: #0153a5;
+    .bg-blueheader{
+        min-height: 20px;
+        width: 100%;
+        background-color: #0153a5;
 
-   }
+    }
     .mytext{
         font-size: 16px;
         color: #fff;
@@ -180,13 +180,13 @@
         background-position: 120px 0px;
         padding-top: 15px;
     }
-   .vl:after{
-       background: url('/asset/icofont/lines.png')  0 0 scroll;
+    .vl:after{
+        background: url('/asset/icofont/lines.png')  0 0 scroll;
         width:20px;
-       height: 100%;
-       right: 0px;
-       position: absolute;
-   }
+        height: 100%;
+        right: 0px;
+        position: absolute;
+    }
     .dateshow{
         padding-top: 15px;
         color:#fff;

@@ -1,7 +1,7 @@
 <template>
     <div v-if="firstpage!=null">
         <headers ></headers>
-        <slider1 class="slider" :height="200" :id="firstpage[3].image" ></slider1>
+        <slider1 class="slider" height="200" :id="firstpage[3].image" ></slider1>
         <div class="">
             <div class="">
                 <div class="row">
@@ -11,7 +11,6 @@
                             <span class="author"><i v-text="firstpage[20].text">Lorem ipsum</i></span>
                         </blockquote>
                     </div>
-
                     <div class="col-sm-4 col-xs-12" >
                     </div>
                 </div>
@@ -47,7 +46,7 @@
                         <VueSlickCarousel v-bind="settings" :arrows="true" :dots="true">
 
                             <div v-for="(item,inx) in news.to_articles"  :key="inx" class="card m-4" style="width: 100%;">
-                                <img class="card-img-top" :src="$storage+'media/Articles/'+item.id+'/thump.png'" alt="Card image cap">
+                                <img class="card-img-top" :src="$storage+'media/Articles/'+item.id+'/thump.png'" :alt="item.name">
                                 <div class="card-body">
                                     <h5 class="card-title" v-text="item.name"></h5>
                                 </div>
@@ -89,11 +88,7 @@
     import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
     import VueSlickCarousel from 'vue-slick-carousel'
-
-
-
     export default {
-
         name: "firstpage",
         components:{
             slider1,
@@ -101,12 +96,22 @@
             foot,
             VueSlickCarousel
         },
-        data(){
+        head:{
+            title: {
+                inner: '',
+                separator: '',
+                complement: ''
+            },
+        },
+       data(){
             return {
-                setting: { },
+                setting: {
+
+                },
                 firstpage:null,
                 schools:null,
                 imgschools:null,
+                fgf:'fg',
                 news:null,
                 settings: {
                     "dots": true,
@@ -137,6 +142,11 @@
                 })
 
             },
+            getAsyncData: function () {
+                var self = this
+                self.title = 'My async title'
+                self.$emit('updateHead');
+            },
             loadfirstpage(){
                 let that=this;
                 this.$axios.get(this.$url+'firstpage').then(function (res) {
@@ -144,7 +154,8 @@
 
 
                 });
-            }
+            },
+
        },
 
         beforeCreate: function () {
@@ -164,9 +175,23 @@
 
             });
 
+
+
+        },
+        created() {
+            let self=this;
+            this.$on('okHead', function () {
+                self.title = 'My async title'
+                self.$emit('updateHead')
+            });
         },
         mounted() {
             this.loadfirstpage();
+            this.$axios.get(this.$url+'setting').then(function (res) {
+                that.setting=res.data;
+                that.getAsyncData();
+
+            });
         }
     }
 </script>

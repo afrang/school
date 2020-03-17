@@ -110,7 +110,8 @@ const router=new  VueRouter({
         {
             path:'/',
             name:'firstpage',
-            component:firstpage
+            component:firstpage,
+
         },
         {
             path:'/group/:url',
