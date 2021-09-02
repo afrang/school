@@ -10,7 +10,7 @@
   "dependencies": {
     "@johmun/vue-tags-input": "^2.1.0",
     "animate.css": "^3.7.2",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "core-js": "^3.4.4",
     "dayjs": "^1.8.22",
